@@ -34,6 +34,7 @@ ylabel[,1]<-activity[ylabel[, 1], 2]
 names(ylabel)<- "activity"
 
 #4. Appropriately labels the data set with descriptive activity names. 
+names(msData)<-feature[meanStdIndices, 2]
 names(subject)<-"subject"
 joinData<- cbind(subject, ylabel, msData)
 
